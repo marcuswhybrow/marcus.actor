@@ -8,6 +8,10 @@ body, html {
   background-color: #8abfdb;
   position: absolute;
   overflow: hidden;
+
+  /* Keeps all text accessible */
+  min-width: 1300px;
+  min-height: 800px;
 }
 
 .world .bg {
@@ -32,7 +36,9 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-160%) translateY(-90%);
+  -webkit-transform: translateX(-160%) translateY(-90%);
+  -ms-transform: translateX(-160%) translateY(-90%);
+      transform: translateX(-160%) translateY(-90%);
   z-index: 200;
 }
 
@@ -53,7 +59,9 @@ body, html {
   text-align: center;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 
   text-transform: lowercase;
 }
@@ -70,7 +78,9 @@ body, html {
   text-align: center;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+       -mstransform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #contact {
@@ -84,7 +94,9 @@ body, html {
   text-align: center;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 #contact a {
   text-decoration: none;
